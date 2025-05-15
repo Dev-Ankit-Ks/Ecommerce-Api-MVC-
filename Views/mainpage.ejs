@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .horizontal-container {
+          display: flex;
+          align-items: center; /* Center vertically */
+          gap: 20px; /* Space between items */
+        }
+      
+        .horizontal-container img {
+          border-radius: 50%; /* Make the image circular */
+        }
+      </style>
+</head>
+<body>
+    <div class="horizontal-container">
+        <h1><%= message%></h1>
+        <img src="<%=profilePic%>" height="100px"; width="100px">
+    </div>
+    <button onclick="window.location.href='/api/v1/user/logout'">Logout</button>
+</body>
+</html>
